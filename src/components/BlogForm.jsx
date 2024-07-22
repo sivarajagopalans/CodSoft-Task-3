@@ -9,8 +9,7 @@ import Button from 'react-bootstrap/Button';
 export const BlogForm = () => {
   return (
     <div>
-      <h1 className='text-center my-5'>Blog Plartform</h1>
-      <Container>
+      <Container className='my-5'>
         <Row>
           <Col>
             <Form>
