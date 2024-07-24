@@ -28,6 +28,7 @@ export const BlogForm = () => {
   return (
     <div>
       <Container className='my-5'>
+        <h2 className='my-3 text-center'>Create New Post</h2>
         <Row>
           <Col>
             <Form>
