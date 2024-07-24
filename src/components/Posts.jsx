@@ -32,7 +32,7 @@ export const Posts = () => {
             {
                (blogList.length > 0) ? blogList.map((post, index) => {
                   return (
-                     <Col md={3} key={index}>
+                     <Col sm={4} md={4} lg={3} key={index}>
                         <CardGroup >
                            <Card className='my-5'>
                               <Card.Img variant="top" height={"250px"} width={"120px"} className='p-2' src={post.image} />

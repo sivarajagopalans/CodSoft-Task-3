@@ -14,7 +14,7 @@ export const BlogForm = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [image, setImage] = useState('');
-  
+
   const dispatch = useDispatch();
 
   const formSumbmit = (e) => {
@@ -42,11 +42,15 @@ export const BlogForm = () => {
               </Form.Group>
               <Form.Group controlId="formFile" className="mb-3">
                 <Form.Label className='h4'>Image</Form.Label>
-                <Form.Control type="file"  onChange={(e) => setImage(URL.createObjectURL(e.target.files[0]))} />
+                <Form.Control type="file" onChange={(e) => setImage(URL.createObjectURL(e.target.files[0]))} />
               </Form.Group>
-              <Button variant="secondary" type="submit" onClick={(e) => formSumbmit(e)}>
-                Submit
-              </Button>
+              <div className='text-sm-end text-center my-5'>
+                <Button variant="secondary" type="submit"
+                  onClick={(e) => formSumbmit(e)}>
+                  Submit
+                </Button>
+              </div>
+
 
             </Form>
           </Col>
