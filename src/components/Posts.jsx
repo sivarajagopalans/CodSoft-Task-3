@@ -57,8 +57,8 @@ export const Posts = () => {
                   :
 
                   <section className='text-center my-5'>
-                     <h2 className='text-center text-info'>No Posts in your Page</h2>
-                     <Link className='h3' to='/'>Create New Posts</Link>
+                     <h2 className='text-center text-light'>No Posts in your Page</h2>
+                     <Link className='h3 text-light' to='/'>Create New Posts</Link>
                   </section>
             }
          </Row>

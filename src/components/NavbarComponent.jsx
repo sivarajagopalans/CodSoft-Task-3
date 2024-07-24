@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 export const NavbarComponent = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+            <Navbar collapseOnSelect expand="lg" className="bg-transparent text-light">
                 <Container>
-                    <Navbar.Brand><Link to='/' className='text-decoration-none h3'>Blog Platform</Link></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Brand><Link to='/' className='text-decoration-none h3 text-light'>Blog Platform</Link></Navbar.Brand>
+                    <Navbar.Toggle style={{background:"#DFD6"}} aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
                         <Nav className='d-flex w-25 justify-content-around'>
                             <Link to='/' className='h5 text-decoration-none'>Home</Link>

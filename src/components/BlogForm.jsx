@@ -28,25 +28,25 @@ export const BlogForm = () => {
   return (
     <div>
       <Container className='my-5'>
-        <h2 className='my-3 text-center'>Create New Post</h2>
+        <h2 className='my-3 text-center text-light'>Create New Post</h2>
         <Row>
           <Col>
             <Form>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label className='h4'>Title</Form.Label>
+                <Form.Label className='h4 text-light'>Title</Form.Label>
                 <Form.Control type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter Blog Title" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label className='h4'>Content</Form.Label>
+                <Form.Label className='h4 text-light'>Content</Form.Label>
                 <Form.Control as="textarea" value={content} onChange={(e) => setContent(e.target.value)}
                   rows={3} />
               </Form.Group>
               <Form.Group controlId="formFile" className="mb-3">
-                <Form.Label className='h4'>Image</Form.Label>
+                <Form.Label className='h4 text-light'>Image</Form.Label>
                 <Form.Control type="file" onChange={(e) => setImage(URL.createObjectURL(e.target.files[0]))} />
               </Form.Group>
               <div className='text-sm-end text-center my-5'>
-                <Button variant="secondary" type="submit"
+                <Button variant="success" type="submit"
                   onClick={(e) => formSumbmit(e)}>
                   Submit
                 </Button>
