@@ -28,7 +28,8 @@ export const UpdateBlogComponent = (props) => {
     useEffect(() => {
         if (Object.keys(selectedBlog).length !== 0) {
             setTitle(selectedBlog.title);
-            setContent(selectedBlog.title);
+            setContent(selectedBlog.content);
+            setImage(selectedBlog.image);
             setId(selectedBlog.id);
         }
     }, [selectedBlog])

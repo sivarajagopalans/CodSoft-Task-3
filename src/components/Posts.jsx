@@ -37,9 +37,9 @@ export const Posts = () => {
                            <Card className='my-5'>
                               <Card.Img variant="top" height={"250px"} width={"120px"} className='p-2' src={post.image} />
                               <hr />
-                              <Card.Body style={{ height: "100px", overflow: "hidden" }}>
-                                 <Card.Title>{post.title}</Card.Title>
-                                 <Card.Text>{post.content}</Card.Text>
+                              <Card.Body style={{ height: "150px", overflow: "hidden" }}>
+                                 <Card.Title>Title: {post.title}</Card.Title>
+                                 <Card.Text>Content: {post.content}</Card.Text>
                               </Card.Body>
                               <Card.Footer className='d-flex justify-content-around'>
                                  <Button variant="secondary" onClick={() => updateBlogBtn(post)}>
